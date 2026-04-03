@@ -2,7 +2,7 @@ import qrcode
 
 # 1. La dirección de tu menú (cuando lo subas a internet será tu link real)
 # Por ahora usaremos la dirección local de tu computadora
-url_menu = "http://127.0.0.1:8000/"
+url_menu = "https://menu-club-oficial.onrender.com/"
 
 # 2. Configurar el diseño del QR
 qr = qrcode.QRCode(
@@ -21,6 +21,6 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="#121212", back_color="white")
 
 # 5. Guardar el archivo
-img.save("qr_menu_club.png")
+img.save("qr_menu_club-definitivo.png")
 
 print("¡Éxito! El código QR se ha guardado como 'qr_menu_club.png'")
